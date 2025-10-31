@@ -1,0 +1,46 @@
+# ===============================
+# Facephi QA Automation - Git Ignore
+# ===============================
+
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Reports and artifacts
+reports/
+screenshots/
+*.png
+*.json
+
+# IDE / editor files
+.idea/
+.vscode/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Transpiled / temporary
+dist/
+tmp/
+temp/
+.cache/
+coverage/
+
+# Misc
+*.zip
+*.bak
+*.old

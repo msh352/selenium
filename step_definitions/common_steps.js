@@ -8,11 +8,11 @@ setDefaultTimeout(30000);
  * Usage: Then the current URL should contain "contacta"
  */
 Then('the current URL should contain {string}', async function (partialUrl) {
-    const currentUrl = await this.driver.getCurrentUrl();
-    assert.ok(
-        currentUrl.includes(partialUrl),
-        `❌ The current URL (${currentUrl}) does not contain the expected value: ${partialUrl}`
-    );
+  const currentUrl = await this.driver.getCurrentUrl();
+  assert.ok(
+    currentUrl.includes(partialUrl),
+    `❌ The current URL (${currentUrl}) does not contain the expected value: ${partialUrl}`
+  );
 });
 
 /**
@@ -20,10 +20,10 @@ Then('the current URL should contain {string}', async function (partialUrl) {
  * Usage: Then the current URL should be "https://facephi.com/contacta/"
  */
 Then('the current URL should be {string}', async function (expectedUrl) {
-    const currentUrl = await this.driver.getCurrentUrl();
-    assert.strictEqual(
-        currentUrl,
-        expectedUrl,
-        `❌ The current URL (${currentUrl}) does not match the expected one: ${expectedUrl}`
-    );
+  const currentUrl = await this.driver.getCurrentUrl();
+  assert.strictEqual(
+    currentUrl,
+    expectedUrl,
+    `❌ The current URL (${currentUrl}) does not match the expected one: ${expectedUrl}`
+  );
 });
